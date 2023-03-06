@@ -1,3 +1,4 @@
+import datetime
 from battery.model.battery import Battery
 
 
@@ -7,4 +8,12 @@ class NubbinBattery(Battery):
         self.current_date = current_date
 
     def needs_service(self):
-        pass
+        
+        # today = datetime.today().date()
+        # self.current_date = today
+        
+        service_threshold_date = self.last_service_date.replace(year=self.last_service_date.year + 4) # in four years
+        if service_threshold_date < self.current_date :
+            return True
+        else:
+            return False
