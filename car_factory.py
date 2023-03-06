@@ -10,7 +10,7 @@ class CarFactory():
 
 # To create calliope
     @staticmethod
-    def create_calliope(self, current_date, last_service_date, current_mileage, last_service_mileage)->Car:
+    def create_calliope(current_date, last_service_date, current_mileage, last_service_mileage)->Car:
         # Create Engine: CapuletEngine 
         ce =  CapuletEngine(last_service_mileage, current_mileage)
         # Create battery: SpindlerBattery 
@@ -21,7 +21,7 @@ class CarFactory():
 
 # To create glissade 
     @staticmethod
-    def  create_glissade(self, current_date, last_service_date, current_mileage, last_service_mileage)->Car:
+    def  create_glissade(current_date, last_service_date, current_mileage, last_service_mileage)->Car:
         # create engine: WilloughbyEngine 
         we = WilloughbyEngine(last_service_mileage, current_mileage)
         # create battery 
