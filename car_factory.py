@@ -30,7 +30,7 @@ class CarFactory():
         car = Car(we, sb)
         return car
 
-# To create palindrome 
+# To create palindrome
     @staticmethod
     def create_palindrome(self, current_date, last_service_date, warning_light_on):
         # create engine: SternmanEngine 
